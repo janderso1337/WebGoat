@@ -13,8 +13,8 @@ set PWD=%cd%
 set CATALINA_HOME=%PWD%\tomcat
 set JAVA_HOME=%PWD%\java
 
-delete .\tomcat\conf\server.xml
-copy .\tomcat\conf\server_80.xml .\tomcat\conf\server.xml
+@REM delete .\tomcat\conf\server.xml
+@REM copy .\tomcat\conf\server_80.xml .\tomcat\conf\server.xml
 
 @REM Run tomcat: must have quotes incase var has spaces in it
 call "%CATALINA_HOME%\bin\startup.bat" start
